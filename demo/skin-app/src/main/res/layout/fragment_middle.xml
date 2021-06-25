@@ -20,7 +20,7 @@
     <com.ximsfei.skindemo.widget.CustomTextView2
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/text_background"
+        android:background="@color/text_background_2"
         android:text="custom text view 2"
         android:textColor="@drawable/color_selector" />
 

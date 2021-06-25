@@ -35,6 +35,7 @@ public class SkinCompatDelegate implements LayoutInflaterFactory {
     @Override
     public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
         Log.d(TAG, "onCreateView:: name:" + name + ",parent:" + parent);
+        //Log.w(TAG, Log.getStackTraceString(new IllegalArgumentException("onCreateView ...")));
         View view = null;
         try {
             view = createView(parent, name, context, attrs);

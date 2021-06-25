@@ -10,11 +10,13 @@ import android.support.annotation.AnyRes;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.content.res.AppCompatResources;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.TypedValue;
 
 import skin.support.SkinCompatManager;
 
 public class SkinCompatResources {
+    private String TAG = this.getClass().getSimpleName();
     private static volatile SkinCompatResources sInstance;
     private Resources mResources;
     private String mSkinPkgName = "";
@@ -181,6 +183,7 @@ public class SkinCompatResources {
     }
 
     private Drawable getSkinDrawableCompat(Context context, int resId) {
+        Log.d(TAG, "getSkinDrawableCompat:: getSkinDrawableCompat ...");
         if (AppCompatDelegate.isCompatVectorFromResourcesEnabled()) {
             if (!isDefaultSkin) {
                 try {
@@ -211,6 +214,7 @@ public class SkinCompatResources {
             }
             return AppCompatResources.getDrawable(context, resId);
         } else {
+            Log.d(TAG, "getSkinDrawableCompat:: getSkinDrawable ...");
             return getSkinDrawable(context, resId);
         }
     }

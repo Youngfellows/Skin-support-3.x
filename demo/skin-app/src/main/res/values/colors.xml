@@ -11,6 +11,7 @@
     <color name="text_color">#ff333333</color>
     <color name="text_color_hint">#ffb2b2b2</color>
     <color name="text_background">#ffffffff</color>
+    <color name="text_background_2">#ffffffff</color>
     <color name="background">#f2f4f5</color>
     <color name="divider">#44000000</color>
     <color name="ripple_color">#44000000</color>
